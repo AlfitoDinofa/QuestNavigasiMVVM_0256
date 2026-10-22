@@ -85,3 +85,24 @@ fun FormIsian(
 
             Spacer(modifier = Modifier.height(10.dp))
 
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier.width(250.dp),
+                label = { Text(text = stringResource(id = R.string.alamat)) },
+                onValueChange = {}
+            )
+
+            Spacer(modifier = Modifier.height(30.dp))
+
+            Button(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 25.dp),
+                onClick = onSubmitBtnClick
+            ) {
+                Text(text = stringResource(id = R.string.submit))
+            }
+        }
+    }
+}
