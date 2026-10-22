@@ -11,3 +11,8 @@ import androidx.navigation.compose.rememberNavController
 import com.example.meet5onclass.view.FormIsian
 import com.example.meet5onclass.view.TampilData
 
+enum class Navigasi {
+    FormulirSaya,
+    Detail
+}
+
